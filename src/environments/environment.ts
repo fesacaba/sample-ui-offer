@@ -3,7 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  URL_OMNI_PIN: 'http://localhost:8080',
+  URL_OMNI_PIN: 'https://sample-offer-back.herokuapp.com',
   production: false
 };
 
