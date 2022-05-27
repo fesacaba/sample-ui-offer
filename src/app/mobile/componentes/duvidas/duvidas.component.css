@@ -1,0 +1,53 @@
+div .duvida {
+    border-bottom: 1px solid #F0F0F2;
+    margin-bottom: 1em;
+}
+
+div .duvida .duvida-item {
+    font-size: 1em;
+    font-weight: bold;
+    word-break: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+
+div .duvida .duvida-item div {
+    width: 80%;
+    word-break: normal;
+}
+
+div .duvida .duvida-item span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #3E4149;
+}
+
+div .duvida .duvida-aberto {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%; 
+    letter-spacing: -0.02em; 
+    color: #676D79;
+}
+/* div .duvida .duvida-aberto {
+    padding-bottom: 1em;
+} */
+
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, #151618 0%, #676D79 103.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}

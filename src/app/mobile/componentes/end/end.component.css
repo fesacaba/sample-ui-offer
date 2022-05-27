@@ -1,0 +1,82 @@
+.card{
+    border-radius: 40px 40px 0 0;
+    height: 27vh;
+    background-color: white;
+}
+
+.cause{
+    height: 10vh;
+}
+.cause-2{
+    height: 5vh;
+}
+.top{
+    margin-top: 70px!important;
+}
+.end {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F0F2 0%)!important;
+}
+
+.border{
+    border: 1px solid #000;
+}
+
+.img {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, #151618 0%, #676D79 103.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.text-1{
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #3E4149;
+}
+.text-2{
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #3E4149;
+}
+.text-3{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    background: linear-gradient(180deg, #E95814 0%, #F08A5B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent
+}
+.app-store {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bold{
+    font-weight: bold;
+}

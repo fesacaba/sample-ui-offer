@@ -1,0 +1,74 @@
+.modal-pdf-proposta-lg {
+    position: relative;
+}
+
+.modal-pdf-proposta-lg__close {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    color: #d3d3d3;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    appearance: none;
+    -moz-appearance: none;
+}
+
+.modal-pdf-proposta-lg__close:hover {
+    color: #707070;
+    cursor: pointer;
+}
+
+.modal-pdf-proposta-lg__pdf {
+    margin: 1rem 0;
+    position: relative;
+}
+
+.modal-pdf-proposta-lg__pdf_file {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.modal-pdf-proposta-lg__pdf_actions {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-pdf-proposta-lg__pdf_actions_btn {
+    margin: 0.2rem;
+}
+
+.modal-pdf-proposta-lg_full-screen-modal {
+    max-height: 83vh;
+    width: 100%;
+}
+
+.modal-pdf-proposta-lg_full-screen-modal .mat-dialog-content {
+    max-height: 90vh;
+    margin: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin-right: 9px;
+    right: 0;
+    margin-bottom: 20px;
+}
+
+.right {
+    float: right;
+}
+
+.text {
+    margin-top: 70px !important;
+    color: #676D79;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+}

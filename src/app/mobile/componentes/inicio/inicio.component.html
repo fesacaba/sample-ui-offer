@@ -1,0 +1,30 @@
+<div>
+    <div class="container-inicio">
+        <!--  <div class="filtro">
+
+         </div> -->
+        <div class="cliente">
+            <img class="filtroOmni" src="../../assets/img/mobile/filtroOmni.svg"/>
+            <div class="abordagem">
+                <p>
+                    Oi <b>{{nomeCliente}}</b>, aproveite essa <br>
+                    oferta e <b>utilize o seu cartão sem <br>anuidade</b> como e quando quiser.
+                </p>
+            </div>
+        </div>
+        <div class="limite">
+            <p>{{limiteFormatado() }} de limite<br>
+                para suas compras.</p>
+        </div>
+        <div class="cartao-beneficios">
+            <button class="cartao" (click)="queroCartao()" mat-raised-button>Solicite aqui</button>
+            <span class="beneficios" (click)="scrollTo()">Ver benefícios</span>
+        </div>
+    </div>
+    <div class="imagem-cartao">
+        <img src="assets/img/mobile/cartao.svg">
+    </div>
+    <div class="container-inicio">
+        <p class="sub-img">Sujeito à aprovação de crédito.</p>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+.footer {
+    margin-top: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: #F7F7F8;
+}
+
+.footer .texto,.icones {
+    margin-top: 1.5em;
+}
+
+.footer .icones {
+    display: flex;
+    gap: 1.5em;
+}
+
+.footer .texto p{ 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #3E4149;
+}
+.footer .texto-endereco p{ 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #3E4149;
+}
+.footer .texto b{ 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #3E4149;
+} 
+
+.texto-insta{ 
+    padding-top: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #3E4149; 
+}
+
+.footer .texto.highlight{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #F57821;
+}
+
+.footer .texto .highlight-mini{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #F08A5B;
+}

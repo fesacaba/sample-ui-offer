@@ -1,0 +1,76 @@
+:root {
+	--primary: #013188;
+	--primary-darker: #002D72;
+  --secondary: #FF720A;
+  --secondary-darker: #DD5F13;
+  --button-text: #FEFEFE;
+  --disabled: #C2C2C2;
+  --button-text-disabled: rgba(0,0,0,0.38);
+  --bg-auth: url('/assets/imgs/login/bg.jpg');
+  --logo-auth: none;
+  --logo-header: none;
+  --favicon: none;
+}
+
+$primary = var(--primary)
+$secondary = var(--secondary)
+$primary-darker = var(--primary-darker)
+$secondary-darker = var(--secondary-darker)
+$button-text = var(--button-text)
+$disabled = var(--disabled)
+$button-text-disabled = var(--button-text-disabled)
+$bg-auth = var(--bg-auth)
+$logo-auth = var(--logo-auth)
+$logo-header = var(--logo-header)
+$favicon = var(--favicon)
+
+$grey = #C2C2C2
+$light-grey = #989898
+$middle-grey = #474947
+$bg-grey = #f7f7f7
+$contrast-grey = #e1e1e1
+$error = #DF2213
+$success = #0CC082
+$warn = #F5A623
+$white = #ffffff
+$warm-grey = #717171
+$bluey-grey	=	#949DB3
+$dull-blue	=	#4D6EAA
+$greyish = #a4a4a4
+$marine-blue = #002d72
+$rusty-orange = #dd5f13;
+$dark-grey = #444444;
+$shamrock-green = #00c862;
+
+
+$bs-card = 0 2px 5px 0 rgba( 0, 0, 0, 0.1 )
+$bs-header = 0 2px 6px 0 rgba( 0, 0, 0, 0.2 )
+$bs-menu = -2px 0 6px 0 rgba( 0, 0, 0, 0.2 )
+$bs-menu-desk = 2px 0 6px 0 rgba( 0, 0, 0, 0.2 )
+$bs-account-list = rgba(0,0,0,.04)
+
+$primary-font	 = 'MuseoSans'
+$secondary-font = 'Roboto'
+$avertaRegular-font = 'AvertaCyrillic-Regular'
+$avertaBold-font = 'AvertaCyrillic-Bold'
+$avertaSemiBold-font = 'AvertaCyrillic-SemiBold'
+$font-family-omni = "AvertaCyrillic-Regular"
+
+$media_queries = {
+	small-phone : 'only screen and (max-width: 320px)',
+	small-tablet : 'only screen and (max-width: 768px)',
+	small-tablet-min: 'only screen and (min-width: 768px)',
+	tablet : 'only screen and (max-width: 991px)',
+	large-tablet : 'only screen and (max-width: 1024px)',
+	large-desktop: 'only screen and (min-width: 1366px)',
+	desktop: 'only screen and (max-width: 1199px)',
+	print: 'print',
+}
+
+breakpoint( $breakpoints )
+	$conditions = ()
+	for $breakpoint in $breakpoints
+		push( $conditions, $media_queries[$breakpoint] )
+	$conditions = join( ', ', $conditions )
+	@media $conditions
+		{block}

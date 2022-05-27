@@ -1,0 +1,68 @@
+<app-header></app-header>
+
+
+<div class="container">
+    <div>
+        <app-progress-bar [progress]="progress" (onBackBtnClicked)="goBack()"
+                          (onHelpBtnClicked)="openHelp()"></app-progress-bar>
+    </div>
+    <div data-component="sms-validation-code">
+        <form class="form-validation-code" [formGroup]="form">
+            <div class="top-text">
+                <p class="title-sms-validation-code">Digite o código <br> enviado por SMS</p>
+                <p class="subtitle-sms-validation-code">Para validar seu pedido, enviamos um <br> código para
+                    <span style="color: #676D79;" *ngIf="telefone">{{ telefone }}.</span>
+            </div>
+            <div class="pincode-input-container">
+                <input formControlName="numberOne" id="numberOne" #input (keypress)="keypress($event, 'numberOne', 1)"
+                       (keydown.backspace)="backspaceDown('numberOne')"
+                       (input)="setAutoCompleteTokenFromInput($event)"
+                       (paste)="setAutoCompleteTokenFromClipboard($event)"
+                       matInput type="number" maxlength="1" autocomplete="off"
+                       [ngClass]="statusTokenSms && validLength('numberOne') ? 'pincode-input-text-error' : 'pincode-input-text'"
+                       class="form-control pincode-input-text first ">
+
+                <input formControlName="numberTwo" id="numberTwo" #input (keypress)="keypress($event, 'numberTwo', 2)"
+                       (keydown.backspace)="backspaceDown('numberTwo')" matInput type="number" maxlength="1"
+                       autocomplete="off"
+                       [ngClass]="statusTokenSms && validLength('numberTwo') ?  'pincode-input-text-error' : 'pincode-input-text'"
+                       class="form-control pincode-input-text mid">
+
+                <input formControlName="numberThree" id="numberThree" #input
+                       (keypress)="keypress($event, 'numberThree', 3)"
+                       (keydown.backspace)="backspaceDown('numberThree')" matInput type="number" maxlength="1"
+                       autocomplete="off"
+                       [ngClass]="statusTokenSms && validLength('numberThree') ?  'pincode-input-text-error' : 'pincode-input-text'"
+                       class="form-control pincode-input-text mid">
+                <input formControlName="numberFour" id="numberFour" #input
+                       (keypress)="keypress($event, 'numberFour', 4)" (keydown.backspace)="backspaceDown('numberFour')"
+                       matInput type="number" maxlength="1" autocomplete="off"
+                       [ngClass]="statusTokenSms  && validLength('numberFour') ?  'pincode-input-text-error' : 'pincode-input-text'"
+                       class="form-control pincode-input-text mid">
+                <input formControlName="numberFive" id="numberFive" #input
+                       (keypress)="keypress($event, 'numberFive', 5)" (keydown.backspace)="backspaceDown('numberFive')"
+                       matInput type="number" maxlength="1" autocomplete="off"
+                       [ngClass]="statusTokenSms  && validLength('numberFive') ?  'pincode-input-text-error' : 'pincode-input-text'"
+                       class="form-control pincode-input-text mid">
+                <input formControlName="numberSix" id="numberSix" #input
+                       (keypress)="keypress($event, 'numberSix', 6)"
+                       (keydown.backspace)="backspaceDown('numberSix')" matInput type="number" maxlength="1"
+                       autocomplete="off"
+                       [ngClass]="statusTokenSms  && validLength('numberSix') ? 'pincode-input-text-error' : 'pincode-input-text'"
+                       class="form-control pincode-input-text last">
+            </div>
+
+            <div class="footer-btn-sms-validation-code">
+                <a *ngIf="reenviar" class="codigo-validation" (click)="resend()">Reenviar SMS com o código</a>
+                <div *ngIf="contador">
+                    <div class='barra-comum'>
+                        <div class='linha-barra' style="width: {{((contadorTempoSms * 100) / 60) + '%'}}"></div>
+                    </div>
+                    <p class="texto">
+                        {{contadorTempoSms}} seg
+                    </p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+.overlay-general-loading {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.loading-copy-and-paste {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    margin-top: -50px;
+    padding: 50px 25px 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-copy-paste-animation {
+    width: 80px;
+    height: 48px;
+    background-color: #F7F7F8;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-copy-paste-animation span {
+    display: inline-block;
+    vertical-align: middle;
+    width: .6em;
+    height: .6em;
+    margin: .19em;
+    background: #676D79;
+    border-radius: .6em;
+    animation: loading-copy-paste-animation 1s infinite alternate;
+}
+
+.loading-copy-paste-animation span:nth-of-type(2) {
+    background: #C2C5C9;
+    animation-delay: 0.2s;
+}
+
+.loading-copy-paste-animation span:nth-of-type(3) {
+    background: #A4A7AF;
+    animation-delay: 0.4s;
+}
+
+@keyframes loading-copy-paste-animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

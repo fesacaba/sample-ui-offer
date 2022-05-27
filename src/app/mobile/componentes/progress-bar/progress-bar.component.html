@@ -1,0 +1,21 @@
+<div class="progress-bar">
+    <div class="progress-bar-content">
+        <div *ngIf="progress.actual <= 6" class="progress-bar-arrow">
+            <img src="../../../assets/img/iconeFlechaEsquerda.svg" (click)="backBtnClick()" />
+        </div>
+        <ng-container *ngIf="progress.actual <= 3">
+            <div class="progress-bar-body">
+                <div class="progress-bar-progress" [ngStyle]="{'width': totalProgress}"></div>
+            </div>
+            
+            <div class="progress-bar-steps">
+                Passo {{ progress?.actual }} <span>de</span> {{ progress?.total }}
+            </div>
+        </ng-container>
+        <ng-container *ngIf="progress.actual === 5">
+         <div class="progress-bar-steps">
+                    <img src="../../../assets/img/mobile/iconeAjuda.svg" (click)="helpBtnClick()" />
+            </div>
+        </ng-container>
+    </div>
+</div>

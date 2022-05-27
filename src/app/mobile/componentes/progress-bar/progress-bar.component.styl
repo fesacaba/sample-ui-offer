@@ -1,0 +1,40 @@
+@import '../../../../core/styl/utils.styl'
+
+.progress-bar {
+    width: 100%;
+    height: 48px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    .progress-bar-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .progress-bar-body {
+        background: #F7F7F8;
+        border-radius: 20px;
+        width: 50%;
+        height: 12px;
+        .progress-bar-progress {
+            height: 100%;
+            border-radius: 20px;
+            background: linear-gradient(270deg, #E95814 0%, #F29B72 100%);
+        }
+    }
+
+    .progress-bar-steps {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 140%;
+        text-align: right;
+        letter-spacing: -0.02em;
+        color: #C2C5C9;
+        span {
+            font-weight: 300;
+        }    
+    }
+}

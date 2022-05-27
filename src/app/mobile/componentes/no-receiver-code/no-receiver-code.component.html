@@ -1,0 +1,27 @@
+<app-header></app-header>
+
+
+<div class="container">
+    <div>
+        <app-progress-bar [progress]="progress" (onBackBtnClicked)="goBack()"></app-progress-bar>
+    </div>
+
+    <h5 class="principal-title">Os passos abaixo podem<br> resolver:</h5>
+    <div>
+        <div class="flex-container">
+            <h5 class="number border">1</h5>
+            <h5 class="text">Verifique suas mensagens de SMS e<br> veja se o código chegou.</h5>
+        </div>
+        <div class="flex-container">
+            <h5 class="number">2</h5>
+            <h5 class="text">Verifique se a rede do seu celular<br> está ativa e o modo avião foi<br> desativado.</h5>
+        </div>
+        <div class="flex-container">
+            <h5 class="number">3</h5>
+            <h5 class="text">Se o sinal de rede estiver fraco,<br> procure um lugar que tenha um sinal<br> melhor.</h5>
+        </div>
+        <h5 class="text">Se mesmo assim você ainda não receber<br> o código, entre em contato com nossa<br> central:
+        </h5>
+        <span class="color-default line" (click)="callcenter()">Central de atendimento</span>
+    </div>
+</div>

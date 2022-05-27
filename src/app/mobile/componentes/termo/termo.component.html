@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="container">
+    <div>
+        <app-progress-bar [progress]="progress" (onBackBtnClicked)="goBack()"></app-progress-bar>
+    </div>
+
+    <div>
+        <h5>Leia e aceite os termos e normas abaixo:</h5>
+        <p class="text-default">Além do cartão, estamos ofertando <br>também <span class="bold">uma conta digital sem custo.</span>
+        </p>
+        <div class="termos">
+            <mat-checkbox [(ngModel)]="termoAceiteConta" value="tac">
+                Aceito os
+                <span (click)="openPdf('/assets/contratos/termo_conta.pdf')">
+                     <span class="color-default line">
+                           termos de abertura de conta
+                    </span>
+                </span>
+            </mat-checkbox>
+            <mat-checkbox class="top" [(ngModel)]="termoAceiteCartao" value="tcc">
+                Aceito o
+                <span (click)="openPdf('/assets/contratos/termo_cartao_credito.pdf')">
+                    <span class="color-default line">
+                          contrato do cartão de crédito
+                    </span>
+                </span>
+            </mat-checkbox>
+        </div>
+        <button class="botao continuar" (click)="next()" mat-raised-button>Concluir</button>
+    </div>
+</div>

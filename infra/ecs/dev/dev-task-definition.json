@@ -1,0 +1,47 @@
+{
+    "family": "dev-omni-ib-offer-account-front",
+    "executionRoleArn": "arn:aws:iam::287881122065:role/dev-omni-ib-offer-account-front-iam-ecs-task-execution-role",
+    "taskRoleArn": "arn:aws:iam::287881122065:role/dev-omni-ib-offer-account-front-iam-ecs-task-execution-role",
+    "networkMode": "awsvpc",
+    "memory": "512",
+    "cpu": "256",
+    "containerDefinitions": [
+        {
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/dev-omni-ib-offer-account-front",
+                    "awslogs-region": "sa-east-1",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            },
+            "portMappings": [
+                {
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "containerPort": 80
+                }
+            ],
+            "cpu": 256,
+            "ulimits": [
+                {
+                    "name": "nofile",
+                    "softLimit": 65535,
+                    "hardLimit": 65535
+                },
+                {
+                    "name": "nproc",
+                    "softLimit": 65535,
+                    "hardLimit": 65535
+                }
+            ],
+            "memory": 512,
+            "memoryReservation": 512,
+            "startTimeout": 300,
+            "stopTimeout": 60,
+            "image": "287881122065.dkr.ecr.sa-east-1.amazonaws.com/dev-omni-ib-offer-account-front:%VERSION%",
+            "essential": true,
+            "name": "dev-omni-ib-offer-account-front"
+        }
+    ]
+}

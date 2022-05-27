@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0 !important;
+}
+
+.container {
+    padding-right: 28px;
+    padding-left: 28px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+    background-color: #E95814;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color: rgb(233, 88, 20) !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+    color: rgb(233, 88, 20) !important;
+    background-color: rgb(233, 88, 20) !important;
+}
+
+.mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {
+    background-color: rgb(233, 88, 20) !important;
+}
+
+.mat-checkbox-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #676D79;
+}
+
+.mat-mini-fab.mat-accent {
+    background-color: #E95814;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: "Averta-Cyrillic" !important;
+    src: url("/assets/fonts/Averta-Cyrillic-Regular.otf");
+}
+
+* {
+    font-family: "Averta-Cyrillic", sans-serif !important;
+}
+
+.slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.overflow-modal {
+    overflow: scroll;
+    border-radius: 20px 20px 0 0;
+}
+
+.start-modal {
+    position: fixed !important;
+    bottom: 0 !important;
+    width: 100%;
+}
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+    opacity: 0.19 !important;
+}
+
+@-webkit-keyframes slideInUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}

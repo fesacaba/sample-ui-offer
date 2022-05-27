@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Averta-Cyrillic" ;
+    src: url("../../../../assets/fonts/Averta-Cyrillic-Regular.otf");
+}
+* {
+    font-family: "Averta-Cyrillic", sans-serif!important;
+}
+
+div.beneficios-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.beneficios-box app-beneficios-caixa {
+    width: 48%;
+}
+
+.botao {
+    margin-top: 30px;
+    margin-bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 48px;
+    width: 319px;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+    border-color: transparent; 
+    background: #E95814;
+    border-radius: 12px; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%; 
+    letter-spacing: -0.02em;
+}
+
+h4 { 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, #151618 0%, #676D79 103.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+
+} 
+
+div.box {
+    height: 5em;
+    background-color: #FFFFFF;
+    border: 1px solid #F0F0F2;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 0.8em;
+}
+
+div.box .texto {
+    margin-top: 5px;  
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%; 
+    letter-spacing: -0.02em; 
+    color: #3E4149;
+}
+
+.texto2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #3E4149;
+}

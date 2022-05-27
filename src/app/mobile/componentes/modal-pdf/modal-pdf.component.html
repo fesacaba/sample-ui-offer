@@ -1,0 +1,58 @@
+<div class="right">
+  <img class="position-img" src="../../../assets/img/mobile/btn-close.svg" (click)="onNoClick()">
+</div>
+
+<p class="text">
+  Tomei conhecimento, previamente à contratação, da<br> previsão no Regulamento, dentre outras, das cláusulas<br> a
+  respeito
+  das seguintes questões:<br><br> a) eventual exigência de saldo médio;<br><br> b) procedimentos para abertura e
+  encerramento da<br> conta de depósitos (poderá ser encerrada a pedido<br> formal ou por iniciativa do Omni Banco,
+  deverá
+  haver<br> saldo suficiente para cumprir com os compromissos<br> assumidos e o Omni Banco enviará informações sobre<br>
+  a
+  data efetiva do encerramento);<br><br> c) regras básicas do funcionamento da conta, os riscos<br> existentes e
+  as medidas de segurança para fins de<br> movimentação da conta, inclusive em caso de perda,<br> furto ou roubo de
+  credenciais do titular.
+</p>
+<div class="modal-pdf-proposta-lg">
+
+  <div >
+    <div class="modal-pdf-proposta-lg__pdf">
+      <div id="print">
+
+        <pdf-viewer 
+        class="modal-pdf-proposta-lg__pdf_file"
+        [src]="url"
+        [zoom]="zoom"
+        [render-text]="true"
+        [autoresize]="true"
+        [show-borders]="true"
+        [original-size]="true"
+        zoom-scale="page-fit">
+      </pdf-viewer>
+    </div>
+      <footer> 
+        <div class="modal-pdf-proposta-lg__pdf_actions">
+            <button
+            class="modal-pdf-proposta-lg__pdf_actions_btn"
+            (click)="print(url)"
+            mat-mini-fab>
+            <mat-icon>download</mat-icon>
+          </button>
+            <button
+            class="modal-pdf-proposta-lg__pdf_actions_btn"
+            (click)="zoom = zoom + 0.2"
+            mat-mini-fab>
+            <mat-icon>zoom_in</mat-icon>
+          </button>
+          <button
+            class="modal-pdf-proposta-lg__pdf_actions_btn"
+            (click)="zoom = zoom - 0.2"
+            mat-mini-fab>
+            <mat-icon>zoom_out</mat-icon>
+          </button>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>

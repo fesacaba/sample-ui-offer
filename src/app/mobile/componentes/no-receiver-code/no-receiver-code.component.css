@@ -1,0 +1,42 @@
+.principal-title {
+    color: #3E4149;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+}
+.number{
+    padding: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    background: linear-gradient(180deg, #E95814 0%, #F08A5B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text{
+    padding: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #676D79;
+}
+
+.line {
+    border-bottom: 1px solid #E95814;
+}
+
+.color-default{
+    color: #DD5F13;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}

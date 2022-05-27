@@ -1,0 +1,21 @@
+div.box {
+    height: 5em;
+    background-color: #FFFFFF;
+    border: 1px solid #F0F0F2;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 0.8em;
+}
+
+div.box .texto {
+    margin-top: 5px;  
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%; 
+    letter-spacing: -0.02em; 
+    color: #3E4149;
+}
+
+  

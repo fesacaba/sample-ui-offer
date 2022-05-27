@@ -1,0 +1,94 @@
+<div>
+    <h2>Dúvidas?</h2>
+    <div class="duvida">
+        <div class="duvida-item">
+            <div>
+                <span>Quais os benefícios de ter o Super App Omni?</span>
+            </div>
+            <span (click)="toggleDuvida(0)">
+                <img [hidden]="duvida[0]" src="assets/img/mobile/open.svg" alt="">
+                <img [hidden]="!duvida[0]" src="assets/img/mobile/close.svg" alt="">
+            </span>
+        </div>
+        <div [hidden]="!duvida[0]" class="duvida-aberto">
+                O cartão de crédito Omni é internacional e pode ser utilizado em compras físicas e online em outros países, possui a bandeira Visa que é aceita em milhares de estabelecimentos, pode pagar por aproximação e o melhor, sem pagar anuidade. 
+        </div>
+    </div>
+
+    <div class="duvida">
+        <div class="duvida-item">
+            <div>
+                <span>Vou precisar passar por algum tipo de análise?</span>
+            </div>
+            <span (click)="toggleDuvida(1)">
+                <img [hidden]="duvida[1]" src="assets/img/mobile/open.svg" alt="">
+                <img [hidden]="!duvida[1]" src="assets/img/mobile/close.svg" alt="">
+            </span>
+        </div>
+        <div [hidden]="!duvida[1]" class="duvida-aberto">
+                Não. A sua análise já foi feita e essa é uma oferta personalizada para você. 
+        </div>
+    </div>
+
+    <div class="duvida">
+        <div class="duvida-item">
+            <div>
+                <span>O cartão de crédito Omni Banco tem anuidade?</span>
+            </div>
+            <span (click)="toggleDuvida(2)">
+                <img [hidden]="duvida[2]" src="assets/img/mobile/open.svg" alt="">
+                <img [hidden]="!duvida[2]" src="assets/img/mobile/close.svg" alt="">
+            </span>
+        </div>
+        <div [hidden]="!duvida[2]" class="duvida-aberto">
+            O cartão de crédito Omni Banco é totalmente isento de anuidade assim como nossa conta digital.
+        </div>
+    </div>
+
+    
+
+    <div class="duvida">
+        <div class="duvida-item">
+            <div>
+                <span>Qual o prazo para o recebimento do cartão?</span>
+            </div>
+            <span (click)="toggleDuvida(3)">
+                <img [hidden]="duvida[3]" src="assets/img/mobile/open.svg" alt="">
+                <img [hidden]="!duvida[3]" src="assets/img/mobile/close.svg" alt="">
+            </span>
+        </div>
+        <div [hidden]="!duvida[3]" class="duvida-aberto">
+                Após conclusão de abertura da conta, o seu cartão chegará em até 13 dias úteis.
+        </div>
+    </div>
+    <div class="duvida">
+        <div class="duvida-item">
+            <div>
+                <span>Como solicito aumento do limite de crédito?</span>
+            </div>
+            <span (click)="toggleDuvida(4)">
+                <img [hidden]="duvida[4]" src="assets/img/mobile/open.svg" alt="">
+                <img [hidden]="!duvida[4]" src="assets/img/mobile/close.svg" alt="">
+            </span>
+        </div>
+        <div [hidden]="!duvida[4]" class="duvida-aberto">
+                Nós fazemos uma reanálise no limite de crédito recorrentemente de forma automática. Sempre que aprovado você receberá uma comunicação informando o aumento. 
+                <br><br>
+                Utilize seu cartão para compras no crédito, realize o pagamento integral das suas faturas e utilize os outros serviços da sua conta digital para ter mais chances de aumentar o seu limite. 
+        </div>
+    </div>
+    <div class="duvida">
+        <div class="duvida-item">
+            <div>
+                <span>É necessário abrir uma conta Omni?</span>
+            </div>
+            <span (click)="toggleDuvida(5)">
+                <img [hidden]="duvida[5]" src="assets/img/mobile/open.svg" alt="">
+                <img [hidden]="!duvida[5]" src="assets/img/mobile/close.svg" alt="">
+            </span>
+        </div>
+        <div [hidden]="!duvida[5]" class="duvida-aberto">
+                Sim. Para ter o cartão de crédito é necessário abrir uma conta digital Omni Banco, mas não se preocupe porque nossa conta digital é totalmente gratuita, com saque em caixas 24h, Pix e TEDs ilimitados e diversos outros serviços para aproveitar. 
+        </div>
+    </div>
+</div>    

@@ -1,0 +1,40 @@
+.right{
+    float: right;
+}
+
+.position {
+    margin: 50px 15px 28px 35px;
+}
+
+.title-1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #3E4149;
+}
+
+.title-2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #676D79;
+}
+
+
+.top{
+    margin-top: 40px!important;
+}
+
+.line {
+    margin-top: 20px!important;
+    margin-bottom: 20px!important;
+    border-bottom: 1px solid #F7F7F8;
+}
+
+.position-img{
+    float: right;
+}

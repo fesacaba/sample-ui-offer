@@ -1,0 +1,25 @@
+<ng-container *ngIf="window === 'home' && showFatca">
+    <app-header></app-header>
+        <!-- <app-sms-validation-code telefone="(11) *****-9999"></app-sms-validation-code> -->
+    <div>
+        <app-inicio (cartao)="onboarding()" (beneficio)="scroll(beneficios)" nomeCliente={{nome}} limite={{limite}}></app-inicio>
+    </div>
+    
+    <div #beneficios class="container"> 
+        <app-beneficios (cartao)="onboarding()"></app-beneficios>
+    </div>
+
+    <div class="container">
+        <app-super-app></app-super-app>
+    </div>
+
+    <div class="container">
+        <app-duvidas></app-duvidas>
+    </div>
+
+    <app-footer></app-footer>
+</ng-container>
+
+<ng-container *ngIf="window === 'onboarding'">
+    <app-onboarding nome={{nome}} telefone={{telefone}} proposta={{proposta}}  (onBackBtnClicked)="goHome()"></app-onboarding>
+</ng-container>

@@ -1,0 +1,29 @@
+<app-header ></app-header>
+<div class="container">
+    <div>
+        <app-progress-bar [progress]="progress" (onBackBtnClicked)="goBack()"></app-progress-bar>
+    </div>
+    <ng-container *ngIf="progress.actual === 1">
+        <h5>Selecione o melhor dia para o vencimento das faturas:</h5>
+        <div class="centro">
+            <mat-button-toggle-group [(ngModel)]="diaVencimento" aria-label="Font Style">
+                <div class="vencimento">
+                    <mat-button-toggle value="01">01</mat-button-toggle>
+
+                    <mat-button-toggle value="05">05</mat-button-toggle>
+
+                    <mat-button-toggle value="10">10</mat-button-toggle>
+                </div>
+                <div class="vencimento">
+                    <mat-button-toggle value="15">15</mat-button-toggle>
+
+                    <mat-button-toggle value="20">20</mat-button-toggle>
+
+                    <mat-button-toggle value="25">25</mat-button-toggle>
+                </div>
+            </mat-button-toggle-group>
+        </div>
+        <button [disabled]="!diaVencimento" class="botao top" (click)="next()" mat-raised-button>Continuar
+        </button>
+    </ng-container>
+</div>

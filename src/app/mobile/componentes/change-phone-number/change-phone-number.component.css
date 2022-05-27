@@ -1,0 +1,59 @@
+.card {
+    border: 1px solid #F0F0F2;
+    border-radius: 12px;
+    margin: 28px;
+    padding: 24px;
+}
+
+.title-number {
+    color: #E95814;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 140%;
+}
+
+.title-sub-number {
+    color: #A4A7AF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+}
+
+.title-card {
+    color: #676D79;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+}
+
+.sub-title-card {
+    color: #A4A7AF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+}
+
+.principal-title {
+    color: #3E4149;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+}
+
+.principal-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #676D79;
+}

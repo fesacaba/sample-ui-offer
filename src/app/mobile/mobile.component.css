@@ -1,0 +1,13 @@
+.container {
+    margin-top: 3em;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Averta-Cyrillic";
+    src: url("../../assets/fonts/Averta-Cyrillic-Regular.otf");
+}
+
+* {
+    font-family: "Averta-Cyrillic", sans-serif;
+}

@@ -1,0 +1,189 @@
+.vencimento {
+    display: flex;
+    flex-direction: row;
+}
+.bt{
+    border:1px solid #D5DBDB !important;
+    width: 150px!important;
+    border-radius: 12px;
+
+}
+.alain {
+    display: flex;
+    flex-direction: row;
+}
+
+.termos {
+    padding-top: 40px;
+}
+
+.mat-button-toggle-standalone, .mat-button-toggle-group {
+    flex-direction: column;
+    overflow: unset;
+}
+
+.mat-button-toggle-checked {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #E95814 !important;
+    background: #FFFFFF;
+    border: 1px solid #F29B72 !important;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px rgba(233, 88, 20, 0.05);
+    border-radius: 12px;
+}
+
+.mat-button-toggle {
+    box-shadow: 0px 10px 40px rgb(0 0 0 / 7%);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 88px;
+    height: 88px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #A4A7AF;
+    border-radius: 12px;
+}
+
+.mat-button-toggle-group-appearance-standard{
+    border: none;
+}
+
+.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+    border-left: none;
+    border-radius: 12px;
+}
+
+div.beneficios-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.beneficios-box app-beneficios-caixa {
+    width: 48%;
+}
+
+.botao {
+    margin-bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 48px;
+    width: 319px;
+    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+    border-color: transparent;
+    background: #E95814;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+}
+
+.iconeContrato {
+    margin: 23px 0px 19px 24px;
+}
+
+.cardContrato {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    margin-top: 20px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 319px;
+    height: 128px;
+    border-radius: 12px;
+}
+
+.contrato {
+    font-style: normal;
+    font-weight: 700;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 100%;
+    display: flex;
+    align-items: flex-start;
+    letter-spacing: -0.02em;
+    color: #3E4149;
+}
+
+.contrato b {
+    margin-left: 20px;
+}
+
+.contrato p {
+    margin-left: 20px;
+    padding-top: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #676D79;
+}
+
+.setaDireita{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #C2C5C9;
+    margin-right: 22px;
+}
+
+.setaDireita span {
+    margin-top: -19px;
+    position: absolute;
+}
+
+.color-default{
+    color: #DD5F13;
+}
+
+.top {
+    margin-top: 40px;
+}
+
+.centro {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h5 {
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #3E4149;
+
+}
+
+header {
+    display: none;
+}

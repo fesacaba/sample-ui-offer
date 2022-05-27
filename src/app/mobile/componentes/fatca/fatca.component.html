@@ -1,0 +1,26 @@
+<app-header></app-header>
+<div class="container">
+    <div>
+        <app-progress-bar [progress]="progress" (onBackBtnClicked)="goBack()"></app-progress-bar>
+    </div>
+
+    <h5>Você possui obrigação fiscal<br> com outro país além do<br> Brasil</h5>
+    <div class="centro">
+
+        <mat-button-toggle-group aria-label="Font Style">
+            <div class="alain">
+                <mat-button-toggle class="bt" value="n">
+                    <mat-radio-button (click)="setfactFalse()" [checked]="true">Não</mat-radio-button>
+                </mat-button-toggle>
+                <mat-button-toggle class="bt" value="s">
+                    <mat-radio-button (click)="setfactTrue()">Sim</mat-radio-button>
+                </mat-button-toggle>
+
+            </div>
+        </mat-button-toggle-group>
+    </div>
+    <div class="footer-btn-sms-validation-code">
+        <a class="color-default line" (click)="more()">Quero saber mais sobre isso</a>
+    </div>
+    <button class="botao top" (click)="next()" mat-raised-button>Continuar</button>
+</div>
