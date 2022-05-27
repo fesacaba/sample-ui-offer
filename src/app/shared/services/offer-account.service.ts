@@ -14,7 +14,7 @@ export class OfferAccountService {
     constructor(private httpClient: HttpClient) {
     }
 
-    url = environment.URL_OMNI_PIN;
+    url = 'https://sample-offer-back.herokuapp.com';
 
     sendPin(request: SendPin): Observable<any> {
         return this.httpClient.post(`${this.url}/api/v1/pin/send`, request);
