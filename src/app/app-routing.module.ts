@@ -1,11 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MobileComponent } from './mobile/mobile.component';
 
 const mobileRoutes: Routes = [
     {
         path: '',
         redirectTo: '/mobile',
         pathMatch: 'full',
+    },
+    {
+        path: 'mobile',
+        component: MobileComponent,
+        data: {
+            title: 'Mobile'
+        }
     },
     {
         path: '',
