@@ -8,6 +8,10 @@ const mobileRoutes: Routes = [
         pathMatch: 'full',
     },
     {
+        path: '',
+        loadChildren: () => import('./mobile/mobile.module').then(m => m.MobileModule)
+    },
+    {
         path: 'fatca',
         loadChildren: () => import('./mobile/componentes/fatca/fatca.module').then(m => m.FatcaModule)
     },
