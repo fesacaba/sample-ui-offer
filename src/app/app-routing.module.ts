@@ -1,7 +1,12 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 const mobileRoutes: Routes = [
+    {
+        path: '',
+        redirectTo: '/mobile',
+        pathMatch: 'full',
+    },
     {
         path: '',
         loadChildren: () => import('./mobile/mobile.module').then(m => m.MobileModule)
